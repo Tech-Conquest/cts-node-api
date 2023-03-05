@@ -1,3 +1,7 @@
 {
-    
+    "userServiceSpec":{
+        "endPointDev":"http://localhost:8001/",
+        "endPointProd":"http://localhost:8001",
+        "entryPoint":"/user"
+    }
 }
