@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE ${PORT}
+EXPOSE 8000
 
-CMD ["npm", "start"]
+CMD ["npx", "nodemon"]
