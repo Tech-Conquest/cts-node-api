@@ -1,0 +1,15 @@
+FROM node:14.15-alpine
+
+WORKDIR /CTS-NODE-API
+
+COPY package*.json ./
+
+RUN npm install
+
+RUN npm install -g ts-node
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["npx", "nodemon"]
